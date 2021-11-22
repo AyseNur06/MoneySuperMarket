@@ -1,0 +1,3 @@
+com\moneySuperMarket\runners\MyRunner.class
+com\moneySuperMarket\step_definitions\LoginStepDefs.class
+com\moneySuperMarket\runners\FailedTestRunner.class
