@@ -16,29 +16,26 @@ public class LoginPage extends BasePage {
     @FindBy(css = ".cms-login > .wal-button__text")
     public WebElement loginPageBtn;
 
+    //@FindBy(id = "msm-auth-email-0")
     @FindBy(xpath = "//input[@type = 'email']" )
     public WebElement emailInput;
-// @FindBy(id = "msm-auth-email-0")
 
-    @FindBy (xpath = "//input[@type = 'password']")
+   //  @FindBy (id = "msm-auth-password-1")
+   @FindBy (xpath = "//input[@type = 'password']")
     public WebElement passwordInput;
-  //  @FindBy (id = "msm-auth-password-1")
 
-    @FindBy (css = "button[type='submit']")
+   @FindBy (css = "button[type='submit']")
     public WebElement loginBtn;
- // @FindBy (xpath ="//span[.='Log in']")
 
-   // @FindBy (xpath = "//*[contains(text(),'Welcome back')]")
-   // @FindBy (className = "user-message__main")
-    @FindBy (css = ".user-message__main")
-
+    // @FindBy (className = "user-message__main")
+    // @FindBy (xpath = "//*[contains(text(),'Welcome back')]")
+  @FindBy (css = ".user-message__main")
     public WebElement welcomeMessage;
 
 
-  //  @FindBy (xpath = "//div[@role='alert']")
-
-   @FindBy (className = "wal-alert__message")
-   public WebElement loginErrorMessage;
+   @FindBy (xpath = "//div[@role='alert']")
+    //@FindBy (className = "wal-alert__message")
+    public WebElement loginErrorMessage;
 
     public void loginWithValidCredentials (){
         emailInput.sendKeys(ConfigurationReader.get("ValidUsername"));
@@ -47,22 +44,30 @@ public class LoginPage extends BasePage {
 
     }
 
-    public void loginWithInvalidCredentials (String username, String password){
-        emailInput.sendKeys(username);
-        passwordInput.sendKeys(password);
+    public void loginWithInvalidCredentials(){
+
+        emailInput.sendKeys(ConfigurationReader.get("InvalidUsername"));
+        passwordInput.sendKeys(ConfigurationReader.get("InvalidPassword"));
+        loginBtn.click();
+
+    }
+    public void loginWithOnlyUsername (){
+        emailInput.sendKeys(ConfigurationReader.get("InvalidUsername"));
         loginBtn.click();
     }
 
-    public void loginWithOnlyUsername (String username){
-        emailInput.sendKeys(username);
+    public void loginWithOnlyPassword (){
+        passwordInput.sendKeys(ConfigurationReader.get("ValidPassword"));
         loginBtn.click();
     }
 
-    public void loginWithOnlyPassword (String password){
-        passwordInput.sendKeys(password);
+    public void loginWithInvalidRangeValuePassword (){
+        emailInput.sendKeys(ConfigurationReader.get("ValidUsername"));
+        passwordInput.sendKeys(ConfigurationReader.get("WrongRangeValuePassword"));
         loginBtn.click();
     }
 
-
-
+    public void loginWithoutCredentials(){
+        loginBtn.click();
+    }
 }

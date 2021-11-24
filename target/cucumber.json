@@ -3,20 +3,18 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-22T19:35:17.885Z",
-        "line": 10,
-        "name": "User should be able to log in with valid credentials and see the welcome message",
+        "line": 8,
+        "name": "",
         "description": "",
-        "id": "user-login;user-should-be-able-to-log-in-with-valid-credentials-and-see-the-welcome-message",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 5541234800,
+              "duration": 2387000000,
               "status": "passed"
             },
-            "line": 12,
+            "line": 9,
             "name": "user is on the home page",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
@@ -25,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 231003700,
+              "duration": 282000000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 10,
             "name": "user clicks on the acceptPopUp button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
@@ -37,19 +35,52 @@
           },
           {
             "result": {
-              "duration": 3022996200,
+              "duration": 1819000000,
               "status": "passed"
             },
-            "line": 14,
+            "line": 11,
             "name": "user clicks on the LogInPageBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
             },
             "keyword": "When "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-24T02:29:57.189Z",
+        "before": [
           {
             "result": {
-              "duration": 741545800,
+              "duration": 4310000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User should be able to log in with valid credentials and see the welcome message",
+        "description": "",
+        "id": "user-login;user-should-be-able-to-log-in-with-valid-credentials-and-see-the-welcome-message",
+        "after": [
+          {
+            "result": {
+              "duration": 867000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 676000000,
               "status": "passed"
             },
             "line": 15,
@@ -61,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 149001000,
+              "duration": 102000000,
               "status": "passed"
             },
             "line": 16,
@@ -73,16 +104,15 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".user-message__main\"}\n  (Session info: chrome\u003d96.0.4664.45)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ESUVLD9\u0027, ip: \u0027172.29.0.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\X1YOGA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2275857deab652f9982ceef685cf8e03\n*** Element info: {Using\u003dcss selector, value\u003d.user-message__main}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy19.getText(Unknown Source)\r\n\tat com.moneySuperMarket.step_definitions.LoginStepDefs.userShouldBeAbleToLoginAndSeeUsernameMessage(LoginStepDefs.java:52)\r\n\tat ✽.user should be able to login and see \"Welcome back, Rach!\" username message(file:///C:/Users/X1%20Yoga/ideProjects/MoneySuperMarket/src/test/resources/features/Login.feature:17)\r\n",
-              "duration": 2081187700,
-              "status": "failed"
+              "duration": 6806000000,
+              "status": "passed"
             },
             "line": 17,
-            "name": "user should be able to login and see \"Welcome back, Rach!\" username message",
+            "name": "user should be able to login and see \"Welcome back\" username message",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Welcome back, Rach!\"",
+                  "val": "\"Welcome back\"",
                   "offset": 37
                 }
               ],
@@ -98,20 +128,18 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-22T19:35:29.795Z",
-        "line": 20,
-        "name": "User should NOT be able to login with invalid credentials",
+        "line": 8,
+        "name": "",
         "description": "",
-        "id": "user-login;user-should-not-be-able-to-login-with-invalid-credentials",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 1224533500,
+              "duration": 1684000000,
               "status": "passed"
             },
-            "line": 22,
+            "line": 9,
             "name": "user is on the home page",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
@@ -120,22 +148,67 @@
           },
           {
             "result": {
-              "duration": 1117905600,
+              "duration": 274000000,
               "status": "passed"
             },
-            "line": 23,
+            "line": 10,
+            "name": "user clicks on the acceptPopUp button",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1770000000,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "user clicks on the LogInPageBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
             },
             "keyword": "When "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-24T02:30:14.637Z",
+        "before": [
           {
             "result": {
-              "duration": 479002700,
+              "duration": 2211000000,
               "status": "passed"
             },
-            "line": 24,
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User should NOT be able to login with invalid credentials",
+        "description": "",
+        "id": "user-login;user-should-not-be-able-to-login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 821000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 664000000,
+              "status": "passed"
+            },
+            "line": 22,
             "name": "user enters invalid username and password",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_enters_invalid_username_and_password()"
@@ -144,10 +217,10 @@
           },
           {
             "result": {
-              "duration": 245181100,
+              "duration": 104000000,
               "status": "passed"
             },
-            "line": 25,
+            "line": 23,
             "name": "user clicks on the logInBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_logInBtn_button()"
@@ -156,14 +229,13 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".wal\\-alert__message\"}\n  (Session info: chrome\u003d96.0.4664.45)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ESUVLD9\u0027, ip: \u0027172.29.0.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\X1YOGA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2275857deab652f9982ceef685cf8e03\n*** Element info: {Using\u003dclass name, value\u003dwal-alert__message}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)\r\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:389)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy19.getText(Unknown Source)\r\n\tat com.moneySuperMarket.step_definitions.LoginStepDefs.user_should_NOT_be_able_to_login_and_see_a_warning_message(LoginStepDefs.java:65)\r\n\tat ✽.user should NOT be able to login and see a warning message(file:///C:/Users/X1%20Yoga/ideProjects/MoneySuperMarket/src/test/resources/features/Login.feature:26)\r\n",
-              "duration": 19000500,
-              "status": "failed"
+              "duration": 1101000000,
+              "status": "passed"
             },
-            "line": 26,
-            "name": "user should NOT be able to login and see a warning message",
+            "line": 24,
+            "name": "verify that user should NOT be able to login and see a warning message",
             "match": {
-              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_should_NOT_be_able_to_login_and_see_a_warning_message()"
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_NOT_be_able_to_login_and_see_a_warningMessage()"
             },
             "keyword": "Then "
           }
@@ -175,20 +247,18 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-22T19:35:32.900Z",
-        "line": 29,
-        "name": "User should NOT be able to login with only username",
+        "line": 8,
+        "name": "",
         "description": "",
-        "id": "user-login;user-should-not-be-able-to-login-with-only-username",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 1047485900,
+              "duration": 1685000000,
               "status": "passed"
             },
-            "line": 31,
+            "line": 9,
             "name": "user is on the home page",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
@@ -197,22 +267,67 @@
           },
           {
             "result": {
-              "duration": 757903200,
+              "duration": 403000000,
               "status": "passed"
             },
-            "line": 32,
+            "line": 10,
+            "name": "user clicks on the acceptPopUp button",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2014000000,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "user clicks on the LogInPageBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
             },
             "keyword": "When "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-24T02:30:23.267Z",
+        "before": [
           {
             "result": {
-              "duration": 331999100,
+              "duration": 2169000000,
               "status": "passed"
             },
-            "line": 33,
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "User should NOT be able to login with only username",
+        "description": "",
+        "id": "user-login;user-should-not-be-able-to-login-with-only-username",
+        "after": [
+          {
+            "result": {
+              "duration": 857000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 403000000,
+              "status": "passed"
+            },
+            "line": 30,
             "name": "user enters only username",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_enters_only_username()"
@@ -221,10 +336,10 @@
           },
           {
             "result": {
-              "duration": 120033300,
+              "duration": 145000000,
               "status": "passed"
             },
-            "line": 34,
+            "line": 31,
             "name": "user clicks on the logInBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_logInBtn_button()"
@@ -233,13 +348,13 @@
           },
           {
             "result": {
-              "duration": 89965100,
+              "duration": 109000000,
               "status": "passed"
             },
-            "line": 35,
-            "name": "user should NOT be able to login and see a warning message",
+            "line": 32,
+            "name": "verify that user should NOT be able to login and see a warning message",
             "match": {
-              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_should_NOT_be_able_to_login_and_see_a_warning_message()"
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_NOT_be_able_to_login_and_see_a_warningMessage()"
             },
             "keyword": "Then "
           }
@@ -251,20 +366,18 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-22T19:35:35.258Z",
-        "line": 38,
-        "name": "User should NOT be able to login with only password",
+        "line": 8,
+        "name": "",
         "description": "",
-        "id": "user-login;user-should-not-be-able-to-login-with-only-password",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 994977600,
+              "duration": 1715000000,
               "status": "passed"
             },
-            "line": 40,
+            "line": 9,
             "name": "user is on the home page",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
@@ -273,22 +386,67 @@
           },
           {
             "result": {
-              "duration": 767997400,
+              "duration": 296000000,
               "status": "passed"
             },
-            "line": 41,
+            "line": 10,
+            "name": "user clicks on the acceptPopUp button",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2652000000,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "user clicks on the LogInPageBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
             },
             "keyword": "When "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-24T02:30:31.055Z",
+        "before": [
           {
             "result": {
-              "duration": 318390900,
+              "duration": 2206000000,
               "status": "passed"
             },
-            "line": 42,
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "User should NOT be able to login with only password",
+        "description": "",
+        "id": "user-login;user-should-not-be-able-to-login-with-only-password",
+        "after": [
+          {
+            "result": {
+              "duration": 907000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 433000000,
+              "status": "passed"
+            },
+            "line": 37,
             "name": "user enters only password",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_enters_only_password()"
@@ -297,10 +455,10 @@
           },
           {
             "result": {
-              "duration": 98998800,
+              "duration": 146000000,
               "status": "passed"
             },
-            "line": 43,
+            "line": 38,
             "name": "user clicks on the logInBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_logInBtn_button()"
@@ -309,13 +467,251 @@
           },
           {
             "result": {
-              "duration": 65997100,
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "verify that user should NOT be able to login and see a warning message",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_NOT_be_able_to_login_and_see_a_warningMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1774000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on the home page",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 265000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on the acceptPopUp button",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2460000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on the LogInPageBtn button",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-24T02:30:39.488Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2185000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "User should NOT be able to login with password with invalid range value",
+        "description": "",
+        "id": "user-login;user-should-not-be-able-to-login-with-password-with-invalid-range-value",
+        "after": [
+          {
+            "result": {
+              "duration": 823000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 523000000,
               "status": "passed"
             },
             "line": 44,
-            "name": "user should NOT be able to login and see a warning message",
+            "name": "user enters username and password with invalid range value",
             "match": {
-              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_should_NOT_be_able_to_login_and_see_a_warning_message()"
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_enters_username_and_password_with_invalid_range_value()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user clicks on the logInBtn button",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_logInBtn_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "verify that user should NOT be able to login and see a warning message",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_NOT_be_able_to_login_and_see_a_warningMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1913000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on the home page",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 213000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on the acceptPopUp button",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1534000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on the LogInPageBtn button",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-24T02:30:47.718Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2157000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "User should NOT be able to login without any password and any username",
+        "description": "",
+        "id": "user-login;user-should-not-be-able-to-login-without-any-password-and-any-username",
+        "after": [
+          {
+            "result": {
+              "duration": 864000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 207000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user doesn\u0027t enter any username and password",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_doesnt_enter_any_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user clicks on the logInBtn button",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_logInBtn_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "verify that user should NOT be able to login and see a warning message",
+            "match": {
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_NOT_be_able_to_login_and_see_a_warningMessage()"
             },
             "keyword": "Then "
           }
