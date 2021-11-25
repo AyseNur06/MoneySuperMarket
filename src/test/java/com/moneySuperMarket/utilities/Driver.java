@@ -18,10 +18,9 @@ public class Driver {
 
     private static WebDriver driver;
 
-    public static WebDriver get(){
+    public static WebDriver getSet(){
 
         if (driver == null) {
-            // this line will tell which browser should open based on the value from properties file
             String browser = com.moneySuperMarket.utilities.ConfigurationReader.get("browser");
 
             switch (browser) {

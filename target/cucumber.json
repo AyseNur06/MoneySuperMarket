@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2387000000,
+              "duration": 2460000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "user is on the home page",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 282000000,
+              "duration": 294000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "user clicks on the acceptPopUp button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
@@ -35,10 +35,10 @@
           },
           {
             "result": {
-              "duration": 1819000000,
+              "duration": 2607000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "user clicks on the LogInPageBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
@@ -48,11 +48,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-24T02:29:57.189Z",
+        "start_timestamp": "2021-11-25T01:45:19.949Z",
         "before": [
           {
             "result": {
-              "duration": 4310000000,
+              "duration": 6408000000,
               "status": "passed"
             },
             "match": {
@@ -60,14 +60,14 @@
             }
           }
         ],
-        "line": 13,
+        "line": 21,
         "name": "User should be able to log in with valid credentials and see the welcome message",
         "description": "",
-        "id": "user-login;user-should-be-able-to-log-in-with-valid-credentials-and-see-the-welcome-message",
+        "id": "user-login;user-should-be-able-to-log-in-with-valid-credentials-and-see-the-welcome-message;;2",
         "after": [
           {
             "result": {
-              "duration": 867000000,
+              "duration": 1004000000,
               "status": "passed"
             },
             "match": {
@@ -76,14 +76,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 676000000,
+              "duration": 2645000000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 16,
             "name": "user enters valid username and password",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_enters_valid_username_and_password()"
@@ -92,10 +92,10 @@
           },
           {
             "result": {
-              "duration": 102000000,
+              "duration": 109000000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 17,
             "name": "user clicks on the logInBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_logInBtn_button()"
@@ -104,19 +104,19 @@
           },
           {
             "result": {
-              "duration": 6806000000,
+              "duration": 6895000000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "user should be able to login and see \"Welcome back\" username message",
+            "line": 18,
+            "name": "user should be able to login and see \"Welcome back, Rach!\"  message",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Welcome back\"",
+                  "val": "\"Welcome back, Rach!\"",
                   "offset": 37
                 }
               ],
-              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.userShouldBeAbleToLoginAndSeeUsernameMessage(java.lang.String)"
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_should_be_able_to_login_and_see_message(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -136,10 +136,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1684000000,
+              "duration": 2396000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "user is on the home page",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
@@ -148,10 +148,10 @@
           },
           {
             "result": {
-              "duration": 274000000,
+              "duration": 271000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "user clicks on the acceptPopUp button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
@@ -160,10 +160,10 @@
           },
           {
             "result": {
-              "duration": 1770000000,
+              "duration": 2580000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "user clicks on the LogInPageBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
@@ -173,11 +173,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-24T02:30:14.637Z",
+        "start_timestamp": "2021-11-25T01:45:42.549Z",
         "before": [
           {
             "result": {
-              "duration": 2211000000,
+              "duration": 2204000000,
               "status": "passed"
             },
             "match": {
@@ -185,14 +185,14 @@
             }
           }
         ],
-        "line": 20,
+        "line": 24,
         "name": "User should NOT be able to login with invalid credentials",
         "description": "",
         "id": "user-login;user-should-not-be-able-to-login-with-invalid-credentials",
         "after": [
           {
             "result": {
-              "duration": 821000000,
+              "duration": 869000000,
               "status": "passed"
             },
             "match": {
@@ -205,10 +205,10 @@
         "steps": [
           {
             "result": {
-              "duration": 664000000,
+              "duration": 2682000000,
               "status": "passed"
             },
-            "line": 22,
+            "line": 26,
             "name": "user enters invalid username and password",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_enters_invalid_username_and_password()"
@@ -217,10 +217,10 @@
           },
           {
             "result": {
-              "duration": 104000000,
+              "duration": 98000000,
               "status": "passed"
             },
-            "line": 23,
+            "line": 27,
             "name": "user clicks on the logInBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_logInBtn_button()"
@@ -229,13 +229,19 @@
           },
           {
             "result": {
-              "duration": 1101000000,
+              "duration": 1081000000,
               "status": "passed"
             },
-            "line": 24,
-            "name": "verify that user should NOT be able to login and see a warning message",
+            "line": 28,
+            "name": "verify that user should see a warning message \"Looks like this isn\u0027t matching the password we have for you. Please try again.\"",
             "match": {
-              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_NOT_be_able_to_login_and_see_a_warningMessage()"
+              "arguments": [
+                {
+                  "val": "\"Looks like this isn\u0027t matching the password we have for you. Please try again.\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_see_a_warningMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -255,10 +261,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1685000000,
+              "duration": 2018000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "user is on the home page",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
@@ -267,10 +273,10 @@
           },
           {
             "result": {
-              "duration": 403000000,
+              "duration": 188000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "user clicks on the acceptPopUp button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
@@ -279,10 +285,10 @@
           },
           {
             "result": {
-              "duration": 2014000000,
+              "duration": 2437000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "user clicks on the LogInPageBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
@@ -292,11 +298,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-24T02:30:23.267Z",
+        "start_timestamp": "2021-11-25T01:45:54.737Z",
         "before": [
           {
             "result": {
-              "duration": 2169000000,
+              "duration": 2235000000,
               "status": "passed"
             },
             "match": {
@@ -304,14 +310,14 @@
             }
           }
         ],
-        "line": 28,
+        "line": 31,
         "name": "User should NOT be able to login with only username",
         "description": "",
         "id": "user-login;user-should-not-be-able-to-login-with-only-username",
         "after": [
           {
             "result": {
-              "duration": 857000000,
+              "duration": 1164000000,
               "status": "passed"
             },
             "match": {
@@ -324,10 +330,10 @@
         "steps": [
           {
             "result": {
-              "duration": 403000000,
+              "duration": 2552000000,
               "status": "passed"
             },
-            "line": 30,
+            "line": 33,
             "name": "user enters only username",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_enters_only_username()"
@@ -339,7 +345,7 @@
               "duration": 145000000,
               "status": "passed"
             },
-            "line": 31,
+            "line": 34,
             "name": "user clicks on the logInBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_logInBtn_button()"
@@ -348,13 +354,19 @@
           },
           {
             "result": {
-              "duration": 109000000,
+              "duration": 70000000,
               "status": "passed"
             },
-            "line": 32,
-            "name": "verify that user should NOT be able to login and see a warning message",
+            "line": 35,
+            "name": "verify that user should see a warning message \"Please let us know your password\"",
             "match": {
-              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_NOT_be_able_to_login_and_see_a_warningMessage()"
+              "arguments": [
+                {
+                  "val": "\"Please let us know your password\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_see_a_warningMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -374,10 +386,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1715000000,
+              "duration": 1840000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "user is on the home page",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
@@ -386,10 +398,11 @@
           },
           {
             "result": {
-              "duration": 296000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ESUVLD9\u0027, ip: \u0027172.29.0.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\X1YOGA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1c5c8349cec1e0bcf6ee0a22a1fffad1\n*** Element info: {Using\u003did, value\u003dbanner-accept}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button(LoginStepDefs.java:23)\r\n\tat ✽.user clicks on the acceptPopUp button(file:///C:/Users/X1%20Yoga/ideProjects/MoneySuperMarket/src/test/resources/features/Login.feature:11)\r\n",
+              "duration": 46000000,
+              "status": "failed"
             },
-            "line": 10,
+            "line": 11,
             "name": "user clicks on the acceptPopUp button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
@@ -398,10 +411,9 @@
           },
           {
             "result": {
-              "duration": 2652000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 11,
+            "line": 12,
             "name": "user clicks on the LogInPageBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
@@ -411,11 +423,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-24T02:30:31.055Z",
+        "start_timestamp": "2021-11-25T01:46:05.548Z",
         "before": [
           {
             "result": {
-              "duration": 2206000000,
+              "duration": 2299000000,
               "status": "passed"
             },
             "match": {
@@ -423,15 +435,16 @@
             }
           }
         ],
-        "line": 35,
+        "line": 37,
         "name": "User should NOT be able to login with only password",
         "description": "",
         "id": "user-login;user-should-not-be-able-to-login-with-only-password",
         "after": [
           {
             "result": {
-              "duration": 907000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ESUVLD9\u0027, ip: \u0027172.29.0.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\X1YOGA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1c5c8349cec1e0bcf6ee0a22a1fffad1\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat com.moneySuperMarket.step_definitions.Hooks.tearDown(Hooks.java:25)\r\n",
+              "duration": 2000000,
+              "status": "failed"
             },
             "match": {
               "location": "com.moneySuperMarket.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -443,10 +456,9 @@
         "steps": [
           {
             "result": {
-              "duration": 433000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 37,
+            "line": 39,
             "name": "user enters only password",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_enters_only_password()"
@@ -455,10 +467,9 @@
           },
           {
             "result": {
-              "duration": 146000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 38,
+            "line": 40,
             "name": "user clicks on the logInBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_logInBtn_button()"
@@ -467,13 +478,18 @@
           },
           {
             "result": {
-              "duration": 77000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 39,
-            "name": "verify that user should NOT be able to login and see a warning message",
+            "line": 41,
+            "name": "verify that user should see a warning message \"Please enter a valid email address\"",
             "match": {
-              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_NOT_be_able_to_login_and_see_a_warningMessage()"
+              "arguments": [
+                {
+                  "val": "\"Please enter a valid email address\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_see_a_warningMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -493,10 +509,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1774000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 9,
+            "line": 10,
             "name": "user is on the home page",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
@@ -505,10 +520,9 @@
           },
           {
             "result": {
-              "duration": 265000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 10,
+            "line": 11,
             "name": "user clicks on the acceptPopUp button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
@@ -517,10 +531,9 @@
           },
           {
             "result": {
-              "duration": 2460000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 11,
+            "line": 12,
             "name": "user clicks on the LogInPageBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
@@ -530,27 +543,28 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-24T02:30:39.488Z",
+        "start_timestamp": "2021-11-25T01:46:09.774Z",
         "before": [
           {
             "result": {
-              "duration": 2185000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ESUVLD9\u0027, ip: \u0027172.29.0.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\X1YOGA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1c5c8349cec1e0bcf6ee0a22a1fffad1\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\r\n\tat com.moneySuperMarket.step_definitions.Hooks.setUp(Hooks.java:16)\r\n",
+              "duration": 20000000,
+              "status": "failed"
             },
             "match": {
               "location": "com.moneySuperMarket.step_definitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 42,
+        "line": 44,
         "name": "User should NOT be able to login with password with invalid range value",
         "description": "",
         "id": "user-login;user-should-not-be-able-to-login-with-password-with-invalid-range-value",
         "after": [
           {
             "result": {
-              "duration": 823000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ESUVLD9\u0027, ip: \u0027172.29.0.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\X1YOGA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1c5c8349cec1e0bcf6ee0a22a1fffad1\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat com.moneySuperMarket.step_definitions.Hooks.tearDown(Hooks.java:25)\r\n",
+              "status": "failed"
             },
             "match": {
               "location": "com.moneySuperMarket.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -562,10 +576,10 @@
         "steps": [
           {
             "result": {
-              "duration": 523000000,
-              "status": "passed"
+              "duration": 8000000,
+              "status": "skipped"
             },
-            "line": 44,
+            "line": 46,
             "name": "user enters username and password with invalid range value",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_enters_username_and_password_with_invalid_range_value()"
@@ -574,10 +588,10 @@
           },
           {
             "result": {
-              "duration": 82000000,
-              "status": "passed"
+              "duration": 3000000,
+              "status": "skipped"
             },
-            "line": 45,
+            "line": 47,
             "name": "user clicks on the logInBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_logInBtn_button()"
@@ -586,13 +600,18 @@
           },
           {
             "result": {
-              "duration": 115000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 46,
-            "name": "verify that user should NOT be able to login and see a warning message",
+            "line": 48,
+            "name": "verify that user should see a warning message \"A password cannot be less than 6 characters\"",
             "match": {
-              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_NOT_be_able_to_login_and_see_a_warningMessage()"
+              "arguments": [
+                {
+                  "val": "\"A password cannot be less than 6 characters\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_see_a_warningMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -612,10 +631,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1913000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 9,
+            "line": 10,
             "name": "user is on the home page",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_is_on_the_home_page()"
@@ -624,10 +642,9 @@
           },
           {
             "result": {
-              "duration": 213000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 10,
+            "line": 11,
             "name": "user clicks on the acceptPopUp button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_acceptPopUp_button()"
@@ -636,10 +653,9 @@
           },
           {
             "result": {
-              "duration": 1534000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 11,
+            "line": 12,
             "name": "user clicks on the LogInPageBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_LogInPageBtn_button()"
@@ -649,27 +665,29 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-24T02:30:47.718Z",
+        "start_timestamp": "2021-11-25T01:46:09.815Z",
         "before": [
           {
             "result": {
-              "duration": 2157000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ESUVLD9\u0027, ip: \u0027172.29.0.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\X1YOGA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1c5c8349cec1e0bcf6ee0a22a1fffad1\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\r\n\tat com.moneySuperMarket.step_definitions.Hooks.setUp(Hooks.java:16)\r\n",
+              "duration": 20000000,
+              "status": "failed"
             },
             "match": {
               "location": "com.moneySuperMarket.step_definitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 48,
+        "line": 50,
         "name": "User should NOT be able to login without any password and any username",
         "description": "",
         "id": "user-login;user-should-not-be-able-to-login-without-any-password-and-any-username",
         "after": [
           {
             "result": {
-              "duration": 864000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-ESUVLD9\u0027, ip: \u0027172.29.0.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\X1YOGA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1c5c8349cec1e0bcf6ee0a22a1fffad1\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat com.moneySuperMarket.step_definitions.Hooks.tearDown(Hooks.java:25)\r\n",
+              "duration": 8000000,
+              "status": "failed"
             },
             "match": {
               "location": "com.moneySuperMarket.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -681,10 +699,10 @@
         "steps": [
           {
             "result": {
-              "duration": 207000000,
-              "status": "passed"
+              "duration": 8000000,
+              "status": "skipped"
             },
-            "line": 50,
+            "line": 52,
             "name": "user doesn\u0027t enter any username and password",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_doesnt_enter_any_username_and_password()"
@@ -693,10 +711,9 @@
           },
           {
             "result": {
-              "duration": 153000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 51,
+            "line": 53,
             "name": "user clicks on the logInBtn button",
             "match": {
               "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.user_clicks_on_the_logInBtn_button()"
@@ -705,13 +722,18 @@
           },
           {
             "result": {
-              "duration": 92000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 52,
-            "name": "verify that user should NOT be able to login and see a warning message",
+            "line": 54,
+            "name": "verify that user should see a warning message \"Please enter a valid email address\"",
             "match": {
-              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_NOT_be_able_to_login_and_see_a_warningMessage()"
+              "arguments": [
+                {
+                  "val": "\"Please enter a valid email address\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.moneySuperMarket.step_definitions.LoginStepDefs.verify_that_user_should_see_a_warningMessage(java.lang.String)"
             },
             "keyword": "Then "
           }

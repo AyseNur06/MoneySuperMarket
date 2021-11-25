@@ -9,7 +9,7 @@ public abstract class BasePage {
 
     public BasePage() {
 
-        PageFactory.initElements(Driver.get(), this);
+        PageFactory.initElements(Driver.getSet(), this);
     }
         @FindBy(id = "banner-accept")
         public WebElement acceptPopUpBtn;

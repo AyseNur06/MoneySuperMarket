@@ -1,6 +1,5 @@
 package com.moneySuperMarket.utilities;
 
-import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -22,7 +21,7 @@ public class BrowserUtilities {
             }
         };
         try {
-            WebDriverWait wait = new WebDriverWait(com.moneySuperMarket.utilities.Driver.get(), timeOutInSeconds);
+            WebDriverWait wait = new WebDriverWait(com.moneySuperMarket.utilities.Driver.getSet(), timeOutInSeconds);
             wait.until(expectation);
         } catch (Throwable error) {
             error.printStackTrace();

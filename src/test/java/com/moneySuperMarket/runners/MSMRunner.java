@@ -16,5 +16,5 @@ import org.junit.runner.RunWith;
         tags = "@login"
 )
 
-public class MyRunner {
+public class MSMRunner {
 }

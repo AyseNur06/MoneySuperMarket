@@ -14,7 +14,7 @@ public class LoginStepDefs {
     @Given("user is on the home page")
     public void user_is_on_the_home_page() {
 
-        Driver.get().get(ConfigurationReader.get("url"));
+        Driver.getSet().get(ConfigurationReader.get("url"));
     }
 
     @Then("user clicks on the acceptPopUp button")
@@ -32,7 +32,7 @@ public class LoginStepDefs {
     @When("user enters valid username and password")
     public void user_enters_valid_username_and_password() {
 
-    //    BrowserUtilities.waitFor(2);
+        BrowserUtilities.waitFor(2);
         loginPage.loginWithValidCredentials();
     }
 
@@ -42,34 +42,40 @@ public class LoginStepDefs {
         loginPage.loginBtn.click();
 
     }
+    @Then("user should be able to login and see {string}  message")
 
-    @Then("user should be able to login and see {string} username message")
-    public void userShouldBeAbleToLoginAndSeeUsernameMessage(String expectedWelcomeMessage) {
-
-     //   BrowserUtilities.waitFor(2);
+    public void user_should_be_able_to_login_and_see_message(String expectedWelcomeMessage) {
+        BrowserUtilities.waitFor(2);
         String actualWelcomeMessage = loginPage.welcomeMessage.getText();
-        Assert.assertTrue(actualWelcomeMessage.contains(expectedWelcomeMessage));
+        Assert.assertEquals(expectedWelcomeMessage,actualWelcomeMessage);
+      //  String actualWelcomeMessageArray[] = actualWelcomeMessage.split(" ");
+      //  String welcomeMessage = actualWelcomeMessageArray[0];
+      //  String username =actualWelcomeMessageArray[1];
+      //  expectedWelcomeMessage = "Welcome back, "+ username;
+       // Assert.assertEquals(expectedWelcomeMessage,welcomeMessage +" "+ username);
+
+
     }
 
     @When("user enters invalid username and password")
     public void user_enters_invalid_username_and_password() {
 
-       // BrowserUtilities.waitFor(2);
+        BrowserUtilities.waitFor(2);
         loginPage.loginWithInvalidCredentials();
     }
 
-    @Then("verify that user should NOT be able to login and see a warning message")
-    public void verify_that_user_should_NOT_be_able_to_login_and_see_a_warningMessage() {
+    @Then("verify that user should see a warning message {string}")
+    public void verify_that_user_should_see_a_warningMessage(String expectedErrorMessage) {
 
-         System.out.println("loginPage.errorMessage = " + loginPage.loginErrorMessage.getText());
-         Assert.assertTrue(loginPage.loginErrorMessage.isDisplayed());
+         String actualErrorMessage = loginPage.loginErrorMessage.getText();
+         Assert.assertEquals(expectedErrorMessage, actualErrorMessage);
 
     }
 
     @When("user enters only username")
     public void user_enters_only_username() {
 
-       // BrowserUtilities.waitFor(2);
+        BrowserUtilities.waitFor(2);
         loginPage.loginWithOnlyUsername();
 
     }
@@ -77,13 +83,14 @@ public class LoginStepDefs {
     @When("user enters only password")
     public void user_enters_only_password() {
 
-       // BrowserUtilities.waitFor(2);
+        BrowserUtilities.waitFor(2);
         loginPage.loginWithOnlyPassword();
     }
 
     @When("user enters username and password with invalid range value")
     public void user_enters_username_and_password_with_invalid_range_value() {
 
+        BrowserUtilities.waitFor(2);
         loginPage.loginWithInvalidRangeValuePassword();
 
     }
@@ -91,6 +98,11 @@ public class LoginStepDefs {
     @When("user doesn't enter any username and password")
     public void user_doesnt_enter_any_username_and_password() {
 
+        BrowserUtilities.waitFor(2);
         loginPage.loginWithoutCredentials();
     }
+
+
+
+
 }

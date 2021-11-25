@@ -13,8 +13,8 @@ public class Hooks {
 
     @Before
     public void setUp() {
-        Driver.get().manage().window().maximize();
-        Driver.get().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        Driver.getSet().manage().window().maximize();
+        Driver.getSet().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 
     }
@@ -22,7 +22,7 @@ public class Hooks {
     @After
     public void tearDown(Scenario scenario) {
         if (scenario.isFailed()) {
-            final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
+            final byte[] screenshot = ((TakesScreenshot) Driver.getSet()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", "screenshot");
         }
         Driver.closeDriver();
