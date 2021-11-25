@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/moneySuperMarket/step_definitions",
         dryRun = false,
-        tags = "@valid or @invalid"
+        tags = "@login"
 )
 
 public class MSMRunner {
