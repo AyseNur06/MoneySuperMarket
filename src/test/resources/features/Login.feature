@@ -1,10 +1,11 @@
 @login
 Feature: User login
 
-  User story
-  As a customer, I want to log in to moneysupermarket website
-  and is shown with a welcome message saying
-  ‘Welcome back <username>’.
+  # User story
+  # As a customer, I want to log in to moneysupermarket website
+  # and is shown with a welcome message saying
+  # ‘Welcome back <username>’.
+
   Background:
 
     Given user is on the home page
