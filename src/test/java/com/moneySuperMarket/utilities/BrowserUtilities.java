@@ -14,17 +14,5 @@ public class BrowserUtilities {
             e.printStackTrace();
         }
     }
-    public static void waitForPageToLoad(long timeOutInSeconds){
-        ExpectedCondition<Boolean>expectation = new ExpectedCondition<Boolean>() {
-            public Boolean apply(WebDriver driver) {
-                return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
-            }
-        };
-        try {
-            WebDriverWait wait = new WebDriverWait(com.moneySuperMarket.utilities.Driver.getSet(), timeOutInSeconds);
-            wait.until(expectation);
-        } catch (Throwable error) {
-            error.printStackTrace();
-        }
-    }
+
 }

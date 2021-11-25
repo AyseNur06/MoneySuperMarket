@@ -31,33 +31,30 @@ public class LoginPage extends BasePage {
     @FindBy (className = "wal-alert__message")
     public WebElement loginErrorMessage;
 
-    public void loginWithValidCredentials (){
-        emailInput.sendKeys(ConfigurationReader.get("ValidUsername"));
-        passwordInput.sendKeys(ConfigurationReader.get("ValidPassword"));
-        loginBtn.click();
+    public void loginWithValidCredentials (String userName, String password){
+        emailInput.sendKeys(userName);
+        passwordInput.sendKeys(password);
 
     }
-
     public void loginWithInvalidCredentials(){
         emailInput.sendKeys(ConfigurationReader.get("InvalidUsername"));
         passwordInput.sendKeys(ConfigurationReader.get("InvalidPassword"));
-        loginBtn.click();
 
     }
     public void loginWithOnlyUsername (){
         emailInput.sendKeys(ConfigurationReader.get("InvalidUsername"));
-        loginBtn.click();
+
     }
 
     public void loginWithOnlyPassword (){
         passwordInput.sendKeys(ConfigurationReader.get("ValidPassword"));
-        loginBtn.click();
+
     }
 
     public void loginWithInvalidRangeValuePassword (){
         emailInput.sendKeys(ConfigurationReader.get("ValidUsername"));
         passwordInput.sendKeys(ConfigurationReader.get("WrongRangeValuePassword"));
-        loginBtn.click();
+
     }
 
     public void loginWithoutCredentials(){

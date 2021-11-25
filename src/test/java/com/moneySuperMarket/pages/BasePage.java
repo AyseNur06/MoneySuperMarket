@@ -14,6 +14,4 @@ public abstract class BasePage {
         @FindBy(id = "banner-accept")
         public WebElement acceptPopUpBtn;
 
-
-
 }

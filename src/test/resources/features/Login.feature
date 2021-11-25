@@ -11,16 +11,17 @@ Feature: User login
     Then user clicks on the acceptPopUp button
     When user clicks on the LogInPageBtn button
 
+  @valid @smoke @regression
   Scenario Outline:User should be able to log in with valid credentials and see the welcome message
 
-    When user enters valid username and password
+    When user enters valid "<username>" and "<password>"
     And user clicks on the logInBtn button
-    Then user should be able to login and see "Welcome back, <userName>!"  message
+    Then verify that user should see a message "Welcome back, <firstName>!"
     Examples:
-      | userName |
-      | Rach     |
+      | username               | password       | firstName     |
+      | rachanakruti@gmail.com | Ontherun60$    | Rach          |
 
-
+@invalid
   Scenario: User should NOT be able to login with invalid credentials
 
     When user enters invalid username and password

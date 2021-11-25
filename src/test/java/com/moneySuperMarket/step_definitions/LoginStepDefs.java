@@ -29,11 +29,11 @@ public class LoginStepDefs {
         loginPage.loginPageBtn.click();
     }
 
-    @When("user enters valid username and password")
-    public void user_enters_valid_username_and_password() {
+    @When("user enters valid {string} and {string}")
+    public void user_enters_valid_and(String username, String password) {
 
-        BrowserUtilities.waitFor(2);
-        loginPage.loginWithValidCredentials();
+        loginPage.loginWithValidCredentials(username,password);
+
     }
 
     @When("user clicks on the logInBtn button")
@@ -42,18 +42,11 @@ public class LoginStepDefs {
         loginPage.loginBtn.click();
 
     }
-    @Then("user should be able to login and see {string}  message")
+    @Then("verify that user should see a message {string}")
+    public void verify_that_user_should_see_a_message(String expectedWelcomeMessage) {
 
-    public void user_should_be_able_to_login_and_see_message(String expectedWelcomeMessage) {
-        BrowserUtilities.waitFor(2);
         String actualWelcomeMessage = loginPage.welcomeMessage.getText();
         Assert.assertEquals(expectedWelcomeMessage,actualWelcomeMessage);
-      //  String actualWelcomeMessageArray[] = actualWelcomeMessage.split(" ");
-      //  String welcomeMessage = actualWelcomeMessageArray[0];
-      //  String username =actualWelcomeMessageArray[1];
-      //  expectedWelcomeMessage = "Welcome back, "+ username;
-       // Assert.assertEquals(expectedWelcomeMessage,welcomeMessage +" "+ username);
-
 
     }
 
@@ -101,8 +94,5 @@ public class LoginStepDefs {
         BrowserUtilities.waitFor(2);
         loginPage.loginWithoutCredentials();
     }
-
-
-
 
 }
